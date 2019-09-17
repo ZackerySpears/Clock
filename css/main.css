@@ -1,11 +1,47 @@
 body {
-    background-color: black;
+    background-color:black;
     font-family: 'Saira Semi Condensed', sans-serif;
 }
 
-#clockDisplay {
-    color: white;
+h1, a {
+    color: aqua;
     text-align: center;
-    font-size: 150pt;
+}
+
+#clockDisplay {
+    color: aqua;
+    position: absolute; /* We want to postion this element exactly on the page */
+    top: 40%; /* Move 50% of the height of the parent */
+    left: 50%; /* Move element right 50% of the width of the parent */
+    transform: translateX(-50%) translateY(-50%); /* Move the element element 50% of its wifth to left and 50% of its height up */
+    font-size: 100pt;
     text-decoration: underline;
 }
+
+#dayMonth {
+    color: aqua;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translateX(-50) translateY(-50);
+    font-size: 40pt;
+}
+
+footer {
+    bottom: 0;
+    font-size: 20pt;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;  
+}
+
+footer :hover {
+    background-color:lightgray;
+}
+

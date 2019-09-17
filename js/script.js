@@ -42,3 +42,45 @@ function showTime() {
 }
 
 showTime();
+
+function currentDate() {
+    var date = new Date();
+
+    var numDay = date.getDate();
+    
+    
+    
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+    var n = weekday[date.getDay()];
+
+    var year = new Array(11);
+    year[0] = "January";
+    year[1] = "February";
+    year[2] = "March";
+    year[3] = "April";
+    year[4] = "May";
+    year[5] = "June";
+    year[6] = "July";
+    year[7] = "August";
+    year[8] = "September";
+    year[9] = "October";
+    year[10] = "November";
+    year[11] = "December";
+
+    var m =year[date.getMonth()];
+
+    var dateMonth = n + ", " + m + " " + numDay;
+
+    document.getElementById("dayMonth").innerText = dateMonth;
+    
+}
+
+currentDate();
