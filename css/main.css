@@ -3,6 +3,14 @@ body {
     font-family: 'Saira Semi Condensed', sans-serif;
 }
 
+h1{
+    text-align: center;
+    float: center;
+    border: 3px solid aqua;
+    position: absolute;
+    left: 40%;
+}
+
 h1, a {
     color: aqua;
     text-align: center;
@@ -14,7 +22,7 @@ h1, a {
     top: 40%; /* Move 50% of the height of the parent */
     left: 50%; /* Move element right 50% of the width of the parent */
     transform: translateX(-50%) translateY(-50%); /* Move the element element 50% of its wifth to left and 50% of its height up */
-    font-size: 100pt;
+    font-size: 80pt;
     text-decoration: underline;
 }
 
@@ -25,6 +33,7 @@ h1, a {
     left: 35%;
     transform: translateX(-50) translateY(-50);
     font-size: 40pt;
+   
 }
 
 footer {
@@ -44,4 +53,6 @@ a {
 footer :hover {
     background-color:lightgray;
 }
+
+
 
