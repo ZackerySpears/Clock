@@ -1,6 +1,7 @@
 body {
     background-color:black;
-    font-family: 'Saira Semi Condensed', sans-serif;
+    margin: 0;
+    font-family: 'Saira Semi Condensed', sans-serif; /*Try to use the  Saira Semi Condensed font, if you can't use sans-serif font */
 }
 
 h1{
@@ -51,7 +52,8 @@ a {
 }
 
 footer :hover {
-    background-color:lightgray;
+    background-color:cyan;
+    color: black;
 }
 
 
